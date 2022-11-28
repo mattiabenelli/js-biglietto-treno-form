@@ -6,21 +6,90 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>biglietto treno form</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&family=Open+Sans&family=PT+Sans:wght@700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="form">
-            <input type="text" name="name" id="name" value="">
-            <input type="number" name="km" id="km" value="">
-            <select name="age" id="age">
-                <option value="Minorenne">Minorenne</option>
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Over-65">Over 65</option>
-            </select>
-            
-            <button id="button-submit">Genera</button>
-            <button id="button-erase">Anulla</button>
+        <div class="background-container">
+            <div class="main-container">
+                <div class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</div>
+                <div class="top-container">
+                    <div class="inside-top-container">
+                        <div class="row">
+                            <div class="col-30">
+                                <div class="col-30-text">Nome Cognome</div>
+                                <div class="col-30-input">
+                                    <input type="text" name="name" id="name" value="">
+                                </div>
+                            </div>
+                            <div class="col-30">
+                                <div class="col-30-text">Km da percorrere</div>
+                                <div class="col-30-input">
+                                    <input type="number" name="km" id="km" value="">
+                                </div>
+                            </div>
+                            <div class="col-30">
+                                <div class="col-30-text">Fascia d'età</div>
+                                <div class="col-30-input">
+                                    <select name="age" id="age">
+                                        <option value="minorenne">Minorenne</option>
+                                        <option value="maggiorenne">Maggiorenne</option>
+                                        <option value="over_65">Over 65</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-buttons">
+                                <button id="button-submit">Genera</button>
+                                <button id="button-erase">Anulla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">IL TUO BIGLIETTO</div>
+                <div class="bottom-container">
+                    <div class="inside-bottom-container">
+                        <div class="container-title">DETTAGLIO PASSEGGERI</div>
+                        <div class="col-container">
+                            <div class="row gap-20">
+                                <div class="col-30">
+                                    <div class="col-row">
+                                        <div class="leftcol-top-title">NOME PASSEGGERO</div>
+                                        <div id="name-surname" class="leftcol-bottom-title"></div>
+                                    </div>
+                                </div>
+                                <div class="col-20">
+                                    <div class="col-row">
+                                        <div class="top-title">Offerta</div>
+                                        <div class="bottom-title">Biglietto standard</div>
+                                    </div>
+                                </div>
+                                <div class="col-15">
+                                    <div class="col-row">
+                                        <div class="top-title">Carrozza</div>
+                                        <div class="bottom-title">5</div>
+                                    </div>
+                                </div>
+                                <div class="col-15">
+                                    <div class="col-row">
+                                        <div class="top-title">Codice CP</div>
+                                        <div class="bottom-title">92911</div>
+                                    </div>
+                                </div>
+                                <div class="col-20">
+                                    <div class="col-row">
+                                        <div class="top-title">Costo biglietto</div>
+                                        <div id="ticket-price" class="bottom-title"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
         <script type="text/javascript" src="./js/script.js"></script>
     </body>
 </html>
