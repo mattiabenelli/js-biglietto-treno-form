@@ -33,8 +33,6 @@
     transform: translate(-50%, -50%);
     width: 60%;
     margin: 0 auto;
-    border: 1px solid black;
-    height: 700px;
     text-align: center;
 }
 .title{
